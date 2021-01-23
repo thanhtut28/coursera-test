@@ -1,0 +1,79 @@
+/* navigation start */
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 1rem;
+   
+    
+}
+
+.header-area .main-menu .navbar{
+    padding: 1rem auto;
+    
+    height: 8vh;
+}
+
+.header-area .main-menu .nav-item .nav-link{
+    font-family: 'Roboto', cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:0.5rem 1.7rem;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.header-area .main-menu .nav-item .nav-link:hover{
+ color:  #504e9c;
+transition: 0.7s;
+ border-bottom:1px solid  #504e9c;
+ 
+ border-radius: 50px;
+ box-shadow:2px 3px #504e9c;
+ 
+ 
+}
+
+
+/* navigation start */
+div .title{
+    padding-top:25%;
+
+}
+div .title::after{
+    content: "";
+    height: 2px;
+    width: 10vw;
+    background-color: black;
+    display: inline-block;
+    margin-left: 1rem;
+
+}
+.site-button .btn{
+    border-radius: 50px;
+    background-color:#504e9c ;
+    color: white;
+    transition: 0.7s;
+}
+
+.site-button .btn:hover{
+    color:#504e9c ;
+    background-color: #fff;
+    border: 1px solid #504e9c;
+    box-shadow:2px 3px #504e9c;
+    margin-top: 5px;
+    
+
+}
+
+
+.home .row .site-title{
+   
+    margin: 0 auto;
+    font-family: 'Roboto',sans-serif;
+   
+}
+
+
