@@ -71,8 +71,10 @@
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 991px) {
     footer .row .col-lg-4:last-child {
         margin-top: 8vmin;
     }
+
+
 }
