@@ -59,7 +59,7 @@ $(window).scroll(function(){
 let section1 = $(".section-1");
 $(window).scroll(function(){
   let oTop = $(".section-2").offset().top - window.innerHeight; 
-   if($(window).scrollTop() > 400 & $(window).scrollTop() < oTop ){
+   if($(window).scrollTop() > 200 & $(window).scrollTop() < oTop ){
       section1.addClass("animate__animated animate__fadeInRight");
      
    } 
@@ -91,4 +91,13 @@ $(document).ready(function(){
   
 })
 
+//loader
+$(document).ready(function () {
+  $.fakeLoader({
+      timeToHide: 4000,
+      bgColor: '#2ecc71',
+      spinner: "spinner6",
+     
+  });
+});
 
