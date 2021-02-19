@@ -22,9 +22,6 @@
 <body>
     <header>
         
-        <div class="fakeLoader"></div>
-
-
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#" id="animate2">
@@ -66,7 +63,8 @@
                 </div>
             </nav>
         </div>
-        <div class="container text-center" id="animate3">
+
+        <div class="container text-center animate__animated animate__zoomIn wow" id="animate3" data-wow-delay="0.5s">
             <div class="row">
                 <div class="col-md-7 col-sm-12" >
                     <h6>AUTHOR: DAILY TUTION</h6>
@@ -87,7 +85,7 @@
 
     <main>
         <!--section-1------------------------>
-        <section class="section-1">
+        <section class="section-1 animate__animated animate__slideInLeft wow" data-wow-duration="1.5s">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
@@ -118,7 +116,7 @@
         <!--section-2--------------------------------->
         <section class="section-2 container-fluid p-0">
             <div class="cover">
-                <div class="content text-center">
+                <div class="content text-center animate__animated wow animate__zoomIn" data-wow-duration="4s">
                     <h1>Some featuers that made us unique.</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, consequuntur.
@@ -127,19 +125,19 @@
             </div>
             <div class="container-fluid text-center">
                 <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
-                    <div class="rect">
+                    <div class="rect animate__animated wow animate__bounceInLeft" data-wow-duration="2s" >
                         <h1>2345</h1>
                         <p>Happy Client</p>
                     </div>
-                    <div class="rect">
+                    <div class="rect animate__animated wow animate__bounceInLeft"  data-wow-duration="3s" data-wow-delay="0.5s">
                         <h1>6784</h1>
                         <p>Cup Coffee</p>
                     </div>
-                    <div class="rect">
+                    <div class="rect animate__animated wow animate__bounceInLeft"  data-wow-duration="3.3s" data-wow-delay="1.5s">
                         <h1>1056</h1>
                         <p>Tickets Submitted</p>
                     </div>
-                    <div class="rect">
+                    <div class="rect animate__animated wow animate__bounceInLeft" data-wow-duration="3.3s" data-wow-delay="2.5s">
                         <h1>9152</h1>
                         <p>Total Projects</p>
                     </div>
@@ -147,12 +145,12 @@
             </div>
 
             <div class="purchase text-center">
-                <h1>Purchase Whatever you want</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, consectetur.</p>
+                <div class="animate__animated wow animate__zoomInDown" data-wow-duration="2s"><h1>Purchase Whatever you want</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, consectetur.</p></div>
                 <div class="cards">
                     <div class="d-flex flex-row justify-content-center flex-wrap">
                         <!--First Card----------------->
-                        <div class="card">
+                        <div class="card animate__animated wow animate__backInRight">
                             <div class="card-body">
                                 <div class="title">
                                     <h5 class="card-title">PDF</h5>
@@ -168,7 +166,7 @@
                         </div>
 
                         <!--Second Card---------------->
-                        <div class="card">
+                        <div class="card animate__animated wow animate__backInRight" data-wow-delay="0.5s">
                             <div class="card-body">
                                 <div class="title">
                                     <h5 class="card-title">E-books</h5>
@@ -184,7 +182,7 @@
                         </div>
 
                         <!--Third card----------------->
-                        <div class="card">
+                        <div class="card animate__animated wow animate__backInRight" data-wow-delay="1s">
                             <div class="card-body">
                                 <div class="title">
                                     <h5 class="card-title">Print Copy</h5>
@@ -377,6 +375,7 @@
             </div>
         </div>
     </footer>
+    
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -386,8 +385,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-
-<script src="jq-fakeloader/dist/fakeLoader.min.js"></script>
+<script src="wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<!-- <script src="jq-fakeloader/dist/fakeLoader.min.js"></script> -->
 <script src="main.js"></script>
 </body>
 

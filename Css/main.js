@@ -43,61 +43,61 @@ $(window).scroll(function(){
   if ($(window).scrollTop() > oTop) {
     navbar.addClass("sticky animate__animated animate__bounceInUp animate__slow");
     
-    $(".section-2").addClass("animate__animated animate__fadeInLeft"); //section-2 animation
+    // $(".section-2").addClass("animate__animated animate__fadeInLeft"); //section-2 animation
 
 
   } else {
     navbar.removeClass("sticky animate__animated animate__bounceInUp animate__slow");
 
-    $(".section-2").removeClass("animate__animated animate__fadeInLeft");
+    // $(".section-2").removeClass("animate__animated animate__fadeInLeft");
   }
 });
 
 
 // section-1 animate
 
-let section1 = $(".section-1");
-$(window).scroll(function(){
-  let oTop = $(".section-2").offset().top - window.innerHeight; 
-   if($(window).scrollTop() > 200 & $(window).scrollTop() < oTop ){
-      section1.addClass("animate__animated animate__fadeInRight");
+// let section1 = $(".section-1");
+// $(window).scroll(function(){
+//   let oTop = $(".section-2").offset().top - window.innerHeight; 
+//    if($(window).scrollTop() > 200 & $(window).scrollTop() < oTop ){
+//       section1.addClass("animate__animated animate__fadeInRight");
      
-   } 
-});
+//    } 
+// });
 
 
 // Purchase in section-2
 
-let purchase = $(".purchase")
-$(window).scroll(function(){
-  let oTop = $(".purchase").offset().top - window.innerHeight;
-  if ($(window).scrollTop() > oTop) {
-    purchase.addClass("animate__animated animate__zoomIn");
-  }
-  else{
-    purchase.removeClass("animate__animated animate__zoomIn");
-  }
-})
+// let purchase = $(".purchase")
+// $(window).scroll(function(){
+//   let oTop = $(".purchase").offset().top - window.innerHeight;
+//   if ($(window).scrollTop() > oTop) {
+//     purchase.addClass("animate__animated animate__zoomIn");
+//   }
+//   else{
+//     purchase.removeClass("animate__animated animate__zoomIn");
+//   }
+// })
 
 
 
 // Jquery test
 
 $(document).ready(function(){
-  $("#animate1").addClass("animate__animated animate__bounceInRight");
-  $("#animate2").addClass("animate__animated animate__bounceInLeft");
-  $("#animate3").addClass("animate__animated animate__fadeInUp");
+  $("#animate1").addClass("animate__animated wow animate__bounceInRight");
+  $("#animate2").addClass("animate__animated wow animate__bounceInLeft");
+  
   
   
 })
 
-//loader
-$(document).ready(function () {
-  $.fakeLoader({
-      timeToHide: 4000,
-      bgColor: '#2ecc71',
-      spinner: "spinner6",
+// //loader
+// $(document).ready(function () {
+//   $.fakeLoader({
+//       timeToHide: 4000,
+//       bgColor: '#2ecc71',
+//       spinner: "spinner6",
      
-  });
-});
+//   });
+// });
 

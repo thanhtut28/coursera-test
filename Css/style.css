@@ -5,6 +5,38 @@
     box-sizing: border-box;
 }
 
+/* custom scoll bar */
+
+::-webkit-scrollbar-button {
+    display: none
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 61, 74);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
 header,
 section {
     overflow-x: hidden
