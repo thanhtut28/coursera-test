@@ -39,8 +39,8 @@ let navbar = $(".navbar"); //store in navbar variable
 $(window).scroll(function(){
     // console.log(window.innerHeight) //windowHeight
     // console.log($(".section-2").offset().top); section-2 top
-    let oTop = $(".section-2").offset().top - window.innerHeight;
-  if ($(window).scrollTop() > oTop) {
+    // let oTop = $(".section-2").offset().top - window.innerHeight;
+  if ($(window).scrollTop() > $('.pray').offset().top) {
     navbar.addClass("sticky animate__animated animate__bounceInUp animate__slow");
     
     // $(".section-2").addClass("animate__animated animate__fadeInLeft"); //section-2 animation
@@ -100,4 +100,5 @@ $(document).ready(function(){
      
 //   });
 // });
+
 
