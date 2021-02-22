@@ -34,7 +34,10 @@
 }
 
 
-
+.navbar-toggler:focus {
+    outline: none;
+    cursor: pointer;
+}
 
 
 header,
@@ -54,7 +57,7 @@ section {
 
 header a {
     font-family: var(--Sniglet-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: whitesmoke;
 }
 
