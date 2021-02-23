@@ -12,6 +12,7 @@ header {
     height: 100vh;
 }
 
+
 nav li a {
     color: white;
     font-family: 'Bebas Neue', cursive;
@@ -119,7 +120,7 @@ nav li a:hover::after {
     padding-left: 0
 }
 
-/* home first col ends */
+/* header second col ends */
 
 .home-2 {
     padding-top: 10vmin;
@@ -158,24 +159,7 @@ img {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* header first-col-ends */
 
 
 @media only screen and (max-width: 992px) {
@@ -190,7 +174,7 @@ img {
     }
 
     .home-2 {
-        height: 100vh;
+        height: 80vh;
     }
 
     .home-2 {
