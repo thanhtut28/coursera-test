@@ -2,14 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Andada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 
 body {
     background-color: rgb(25, 26, 31);
-}
-
-header {
-    height: 100vh;
 }
 
 
@@ -18,7 +15,7 @@ nav li a {
     font-family: 'Bebas Neue', cursive;
     position: relative;
     margin-left: 1rem !important;
-    font-size: 2.5vmin;
+    font-size: 2.8vmin;
 
 }
 
@@ -101,7 +98,7 @@ nav li a:hover::after {
     height: 35px;
     width: 100px;
     font-size: 0.7rem;
-
+    border: 0;
     color: white;
     font-family: 'Anton', sans-serif;
     outline: 0;
@@ -123,7 +120,8 @@ nav li a:hover::after {
 /* header second col ends */
 
 .home-2 {
-    padding-top: 10vmin;
+    padding: 15vmin 0;
+
 }
 
 .name-2 {
@@ -161,6 +159,193 @@ img {
 
 /* header first-col-ends */
 
+/* Skills */
+.skill {
+    padding: 10vmin 10vmin;
+    background-color: rgb(35, 36, 38);
+}
+
+.my-skill {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+    position: relative;
+
+}
+
+.my-skill::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: 45%;
+    height: 2px;
+    background-color: yellow;
+    width: 10%;
+}
+
+.lorem {
+    color: white;
+    opacity: 0.3;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.skill-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    opacity: 0.3;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgba(237, 218, 36, 0.9);
+    font-family: 'Anton', sans-serif;
+}
+
+.bar-1 {
+    background-color: gray;
+    width: 90%;
+    height: 5px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bar-1::before {
+    content: '';
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background: rgba(237, 218, 36, 0.8);
+    border-radius: 2px;
+    animation: html 2s linear;
+
+}
+
+@keyframes html {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+
+
+.bar-2 {
+    background-color: gray;
+    width: 90%;
+    height: 5px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bar-2::before {
+    content: '';
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background: rgba(237, 218, 36, 0.8);
+    border-radius: 2px;
+    animation: css 2s ease-out;
+
+}
+
+@keyframes css {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+
+.bar-3 {
+    background-color: gray;
+    width: 90%;
+    height: 5px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bar-3::before {
+    content: '';
+    width: 65%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background: rgba(237, 218, 36, 0.8);
+    border-radius: 2px;
+    animation: js 2s ease-out;
+
+}
+
+@keyframes js {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+
+.bar-4 {
+    background-color: gray;
+    width: 90%;
+    height: 5px;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bar-4::before {
+    content: '';
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background: rgba(237, 218, 36, 0.8);
+    border-radius: 2px;
+    animation: jq 2s ease-out;
+
+}
+
+@keyframes jq {
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 992px) {
     .home {
@@ -174,11 +359,18 @@ img {
     }
 
     .home-2 {
-        height: 80vh;
+        padding-top: 20vmin;
+        padding-bottom: 10vmin;
     }
 
-    .home-2 {
-        padding-top: 20vmin;
+    .my-skill::after {
+        right: 36%;
+        width: 28%;
     }
+
+    .skill {
+        margin: 0 !important;
+    }
+
 
 }
