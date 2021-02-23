@@ -222,7 +222,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: html 2s linear;
+    animation: html 10s linear;
 
 }
 
@@ -257,7 +257,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: css 2s ease-out;
+    animation: css 10s ease-out;
 
 }
 
@@ -290,7 +290,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: js 2s ease-out;
+    animation: js 10s ease-out;
 
 }
 
@@ -323,7 +323,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: jq 2s ease-out;
+    animation: jq 10s ease-out;
 
 }
 
