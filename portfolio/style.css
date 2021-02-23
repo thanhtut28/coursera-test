@@ -85,6 +85,7 @@ nav li a:hover::after {
 .job {
     color: rgb(237, 218, 36);
     font-family: 'Anton', sans-serif;
+    font-size: 7vmin;
 }
 
 .design {
