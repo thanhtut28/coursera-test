@@ -17,18 +17,18 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand justify-content-center">
+        <div class="container-fluid px-0">
+            <nav class="navbar navbar-expand justify-content-center bg-dark">
                 <div class="" id="navbarNav">
                   <ul class="navbar-nav animate__animated animate__bounceInDown">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#skill">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#places">Places</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
@@ -41,6 +41,7 @@
                     </li>
                   </ul>
                 </div>
+                <a href="#"><i class="fas fa-chevron-up fa-2x animate__animated animate__bounce wow" data-wow-iteration="infinite" data-wow-duration="1.5s"></i></a>
               </nav>
         </div>
         <!-- Navbar-ends -->
@@ -81,35 +82,43 @@
     <!-- Header ends here -->
 
     <main>
-        <div class="container-fluid my-3 skill text-center animate__animated animate__zoomInDown wow" data-wow-duration="2s">
+        <div class="container-fluid mt-3 skill text-center animate__animated animate__zoomInDown wow" data-wow-duration="2s" id="skill">
             <h3 class="my-skill">My Skills</h3>
             <p class="pt-4 lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, blanditiis.</p>
             <div class="row pt-5">
                 <div class="col-md-6 col-sm-12 text-left">
                     <h5 class="skill-text">HTML</h3>
-                    <div class="pb-4"><span class="bar-1">
+                    <div class="pb-4"><span class="bar-1 bar-a">
                         <p class="percentage">80%</p>
                     </span></div>
 
                     <h5 class="skill-text">Css</h3>
-                    <div class="pb-4"><span class="bar-2">
+                    <div class="pb-4"><span class="bar-2 bar-b">
                         <p class="percentage">70%</p>
                     </span></div>
                 </div>
                 <div class="col-md-6 col-sm-12 text-left">
                     <h5 class="skill-text">JavaScript</h3>
-                    <div class="pb-4"><span class="bar-3 ">
+                    <div class="pb-4"><span class="bar-3 bar-c">
                         <p class="percentage">65%</p>
                     </span></div>
 
                     <h5 class="skill-text">JQuery</h3>
-                    <div class="pb-4"><span class="bar-4">
+                    <div class="pb-4"><span class="bar-4 bar-d">
                         <p class="percentage">80%</p>
                     </span></div>
                 </div>
             </div>
         </div>
 
+        <!-- Skill ends -->
+        <div class="container-fluid py-4 text-center places"id="places">
+            <h1 class="place-text">Places I live</h1>
+            <div class="yellow-line"></div>
+        </div>
+       
+         
+        
         
     </main>
 

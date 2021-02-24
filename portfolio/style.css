@@ -4,10 +4,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scoll bar */
+
+::-webkit-scrollbar-button {
+    display: none
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(94, 107, 115);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 61, 74);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 body {
     background-color: rgb(25, 26, 31);
+
+
 }
+
+nav {
+    position: relative;
+}
+
+nav i {
+    position: fixed;
+    bottom: 5%;
+    color: yellow;
+    right: 3%;
+    z-index: 3;
+
+
+}
+
+
+
 
 
 nav li a {
@@ -52,7 +102,7 @@ nav li a:hover::after {
     display: inline-block
 }
 
-/* header ends */
+/* navbar ends */
 
 
 
@@ -137,7 +187,7 @@ nav li a:hover::after {
 
 }
 
-img {
+header img {
     width: 97%;
     height: 97%;
     border-radius: 50%;
@@ -162,6 +212,7 @@ img {
 /* Skills */
 .skill {
     padding: 10vmin 10vmin;
+    padding-bottom: 0;
     background-color: rgb(35, 36, 38);
 }
 
@@ -174,12 +225,22 @@ img {
 
 }
 
+.my-skill::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    right: 47%;
+    height: 1.5px;
+    background-color: yellow;
+    width: 6%;
+}
+
 .my-skill::after {
     content: '';
     position: absolute;
     bottom: -20%;
     right: 45%;
-    height: 2px;
+    height: 1.5px;
     background-color: yellow;
     width: 10%;
 }
@@ -222,9 +283,12 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: html 10s linear;
+    animation: html 15s ease-out infinite;
+
 
 }
+
+
 
 @keyframes html {
     0% {
@@ -257,7 +321,8 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: css 10s ease-out;
+    animation: css 15s ease-out infinite;
+
 
 }
 
@@ -290,7 +355,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: js 10s ease-out;
+    animation: js 15s ease-out infinite;
 
 }
 
@@ -323,7 +388,7 @@ img {
     height: 5px;
     background: rgba(237, 218, 36, 0.8);
     border-radius: 2px;
-    animation: jq 10s ease-out;
+    animation: jq 15s ease-out infinite;
 
 }
 
@@ -335,6 +400,42 @@ img {
     100% {
         width: 80%;
     }
+}
+
+/* Skills div ends */
+
+.places {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+    background: rgb(43, 47, 59);
+
+
+
+
+}
+
+.place-text {
+    position: relative;
+}
+
+.yellow-line {
+    margin: 0 auto;
+    position: relative;
+    width: 90px;
+    height: 50px;
+}
+
+.yellow-line::after {
+    content: '';
+    position: absolute;
+    top: -45%;
+    right: -120%;
+    background-color: yellow;
+    width: 7vmin;
+    height: 5px;
+
 }
 
 
@@ -349,7 +450,7 @@ img {
 
 @media only screen and (max-width: 992px) {
     .home {
-        padding: 25vmin 0vmin;
+        padding: 40vmin 0vmin;
         padding-left: 15vmin;
 
     }
@@ -372,5 +473,40 @@ img {
         margin: 0 !important;
     }
 
+    .my-skill::before {
+        right: 40%;
+        width: 20%;
+    }
 
+    .yellow-line::after {
+
+        top: -45%;
+        right: -85%;
+
+        width: 5vmin;
+        height: 5px;
+
+    }
+
+
+}
+
+/*  mobile phone */
+@media only screen and (max-width:425px) {
+    .yellow-line::after {
+
+        top: -45%;
+        right: -85%;
+
+        width: 7.5vmin;
+        height: 5px;
+
+    }
+
+}
+
+@media only screen and (min-width:1600px) {
+    .yellow-line::after {
+        display: none;
+    }
 }
