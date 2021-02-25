@@ -225,8 +225,7 @@ header img {
 
 /* Skills */
 .skill {
-    padding: 10vmin 10vmin;
-    padding-bottom: 10vmin;
+    padding: 30vmin 10vmin;
     background-color: rgb(35, 36, 38);
 }
 
@@ -418,23 +417,30 @@ header img {
 
 /* Skills div ends */
 
+/* Footer starts */
+.contact-me {
+    background: rgb(29, 32, 40);
+    background: linear-gradient(180deg, rgba(29, 32, 40, 1) 21%, rgba(21, 23, 29, 1) 87%);
+}
+
 .places {
     font-family: 'Londrina Solid', cursive;
     color: white;
     font-weight: bold;
-
-
-
-
+    background-color: rgb(25, 26, 31);
 
 
 }
 
-.place-text {
+
+
+
+
+/* .contact-text {
     position: relative;
-}
+} */
 
-.yellow-line {
+/* .yellow-line {
     margin: 0 auto;
     position: relative;
     width: 90px;
@@ -450,43 +456,51 @@ header img {
     width: 7vmin;
     height: 5px;
 
-}
-
-/* Places ends */
+} */
 
 
-/* Footer starts */
 
-.contact {
+
+
+
+
+/* .contact {
     padding: 10vmin 10vmin;
     color: white;
-}
 
-.contact-1 {
+
+} */
+
+/* .contact-1 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 3.5vmin;
-    color: rgba(237, 218, 36, 1);
-}
+    color: rgba(255, 255, 255, 0.5);
+} */
 
-.contact-2 span {
+/* .contact-2 span {
     font-family: 'Anton', sans-serif;
-    font-size: 6vmin;
-    color: rgb(66, 245, 200);
-}
+    font-size: 8vmin;
+} */
 
 
 .live-in {
     font-family: 'Francois One', sans-serif;
     color: rgba(255, 255, 255, 0.8);
     padding-top: 3vmin;
+    font-size: 1.2rem;
 
 }
 
 .live-in span {
-    font-size: 1.2rem;
-    color: yellow
+    font-size: 1.5rem;
+    color: yellow;
+    opacity: 0.8;
 }
 
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -529,7 +543,7 @@ header img {
         width: 20%;
     }
 
-    .yellow-line::after {
+    /* .yellow-line::after {
 
         top: -45%;
         right: -85%;
@@ -537,7 +551,7 @@ header img {
         width: 5vmin;
         height: 5px;
 
-    }
+    } */
 
 
 
