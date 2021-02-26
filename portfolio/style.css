@@ -5,9 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
 
 html {
     scroll-behavior: smooth;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 /* custom scoll bar */
@@ -51,7 +58,7 @@ nav {
 nav i {
     position: fixed;
     bottom: 5%;
-    color: yellow;
+    color: #08fdd8;
     right: 3%;
     z-index: 3;
 
@@ -72,7 +79,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: rgb(237, 218, 36);
+    color: #08fdd8;
 
 
 }
@@ -81,7 +88,7 @@ nav li a::after {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: rgb(237, 218, 36);
+    background-color: #08fdd8;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -110,9 +117,9 @@ nav li a:hover::after {
 
 
 .home {
-    padding: 25vmin 0vmin;
+    padding: 20vmin 0vmin;
     padding-left: 10vmin;
-    background-color: rgb(43, 47, 59);
+    background-color: rgb(33, 36, 44);
 }
 
 .name {
@@ -129,14 +136,19 @@ nav li a:hover::after {
     left: 0;
     height: 100%;
     width: 2px;
-    background-color: rgb(237, 218, 36);
+    background-color: #08fdd8;
     margin-left: -20px;
 }
 
+.home p {
+    margin: 0;
+}
+
 .job span {
-    color: rgb(237, 218, 36);
+    color: #08fdd8;
     font-family: 'Anton', sans-serif;
     font-size: 7vmin;
+
 }
 
 .design {
@@ -145,10 +157,11 @@ nav li a:hover::after {
     font-size: 3vmin;
     text-transform: uppercase;
     opacity: 0.5;
+    padding-bottom: 1rem;
 }
 
 .btn-cv {
-    background-color: rgb(237, 218, 36);
+    background-color: #08fdd8;
     height: 35px;
     width: 100px;
     font-size: 0.7rem;
@@ -188,14 +201,13 @@ nav li a:hover::after {
 .coding {
     font-family: 'IBM Plex Sans', sans-serif !important;
     font-size: 2vmin !important;
-    opacity: 0.3;
-
-
+    padding: 0 1vmin;
+    color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .job-2 {
     font-family: 'Andada', serif;
-    color: rgb(237, 218, 36);
+    color: #08fdd8;
     opacity: 0.5;
     font-size: 3vmin;
 
@@ -213,7 +225,7 @@ header img {
     height: 40vmin;
     margin: auto;
     border-radius: 50%;
-    background-color: rgb(237, 218, 36);
+    background-color: #08fdd8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,58 +235,141 @@ header img {
 
 /* header first-col-ends */
 
+
+/* about-me starts*/
+
+.about-me {
+
+
+    background-color: rgb(35, 36, 38) !important;
+    border-top: 1px solid #08fdd8;
+    border-bottom: 1px solid #08fdd8;
+
+}
+
+.about-me .col-4 {
+    padding: 40vmin 5vmin;
+
+}
+
+.about-me .coding {
+    color: white;
+}
+
+.about-code-1 {
+    float: right;
+    margin-top: -6vmin;
+
+}
+
+.about-code-2 {
+    float: right;
+    padding-top: 4vmin;
+
+}
+
+.about-text {
+    color: white;
+
+    font-family: 'Londrina Solid', cursive;
+    font-size: 12vmin;
+    line-height: 10vmin;
+    position: relative;
+}
+
+.about-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -12%;
+    width: 8px;
+    height: 100%;
+    background-color: #08fdd8;
+}
+
+.myself {
+    padding: 15vmin 10vmin;
+    color: white;
+
+}
+
+
+.myself span {
+    color: #08fdd8;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 10vmin;
+    padding-bottom: 5vmin;
+}
+
+.myself-text {
+    font-size: 3vmin;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 3vmin;
+    padding-top: 0vmin;
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
 /* Skills */
 .skill {
     padding: 30vmin 10vmin;
     background-color: rgb(35, 36, 38);
+    border-bottom: 1px solid #08fdd8;
 }
 
 .my-skill {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Londrina Solid', cursive;
     color: white;
-    font-weight: bold;
-    opacity: 0.9;
     position: relative;
+    font-size: 8vmin;
 
 }
 
 .my-skill::before {
     content: '';
     position: absolute;
-    bottom: -40%;
+    bottom: -20%;
     right: 47%;
     height: 1.5px;
-    background-color: yellow;
+    background-color: #08fdd8;
     width: 6%;
 }
 
 .my-skill::after {
     content: '';
     position: absolute;
-    bottom: -20%;
+    bottom: -10%;
     right: 45%;
     height: 1.5px;
-    background-color: yellow;
+    background-color: #08fdd8;
     width: 10%;
 }
 
 .lorem {
     color: white;
-    opacity: 0.3;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmin;
 }
 
 .skill-text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
 .percentage {
     position: absolute;
     bottom: 0;
     right: 0;
-    color: rgba(237, 218, 36, 0.9);
+    color: #08fdd8;
     font-family: 'Anton', sans-serif;
 }
 
@@ -294,9 +389,9 @@ header img {
     bottom: 0;
     left: 0;
     height: 5px;
-    background: rgba(237, 218, 36, 0.8);
+    background: #08fdd8;
     border-radius: 2px;
-    animation: html 15s ease-out infinite;
+    animation: html 15s ease-out;
 
 
 }
@@ -332,9 +427,9 @@ header img {
     bottom: 0;
     left: 0;
     height: 5px;
-    background: rgba(237, 218, 36, 0.8);
+    background: #08fdd8;
     border-radius: 2px;
-    animation: css 15s ease-out infinite;
+    animation: css 15s ease-out;
 
 
 }
@@ -366,9 +461,9 @@ header img {
     bottom: 0;
     left: 0;
     height: 5px;
-    background: rgba(237, 218, 36, 0.8);
+    background: #08fdd8;
     border-radius: 2px;
-    animation: js 15s ease-out infinite;
+    animation: js 15s ease-out;
 
 }
 
@@ -399,9 +494,9 @@ header img {
     bottom: 0;
     left: 0;
     height: 5px;
-    background: rgba(237, 218, 36, 0.8);
+    background: #08fdd8;
     border-radius: 2px;
-    animation: jq 15s ease-out infinite;
+    animation: jq 15s ease-out;
 
 }
 
@@ -423,11 +518,10 @@ header img {
     background: linear-gradient(180deg, rgba(29, 32, 40, 1) 21%, rgba(21, 23, 29, 1) 87%);
 }
 
-.places {
+.places h1 {
     font-family: 'Londrina Solid', cursive;
     color: white;
-    font-weight: bold;
-    background-color: rgb(25, 26, 31);
+    font-size: 8vmin;
 
 
 }
@@ -493,7 +587,7 @@ header img {
 
 .live-in span {
     font-size: 1.5rem;
-    color: yellow;
+    color: #08fdd8;
     opacity: 0.8;
 }
 
@@ -576,10 +670,39 @@ footer a:hover {
 
 
     .home {
+        padding-top: 35vmin;
+        padding-bottom: 50vmin;
+        padding-left: 8vmin;
+    }
+
+    .about-text {
+        font-size: 9vmin;
+        line-height: 9vmin;
+
+    }
+
+    .about-code-2 {
+        padding-top: 2vmin;
+
+    }
+
+    .myself span {
+        font-size: 5vmin;
+
+    }
+
+    .myself {
+        padding: 15vmin 5vmin
+    }
+
+    .about-me {
+        padding-top: 45vmin;
         padding-bottom: 45vmin;
     }
 
-
+    .about-me .col-4 {
+        padding-top: 45vmin;
+    }
 
 
 
@@ -595,6 +718,10 @@ footer a:hover {
         padding: 25vmin 15vmin;
     }
 
+    .about-text span {
+        font-size: 20vmin;
+        padding-top: 2vmine;
+    }
 
 }
 
@@ -611,6 +738,8 @@ footer a:hover {
         height: 30vmin;
         width: 30vmin;
     }
+
+
 }
 
 
@@ -632,7 +761,7 @@ footer a:hover {
 }
 
 .a:hover {
-    color: rgb(66, 245, 200);
+    color: rgb(252, 93, 212);
     /* animation: rubberBand 5s infinite; */
     animation-name: rubberBand;
 }
