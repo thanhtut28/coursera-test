@@ -16,14 +16,13 @@
   />
 </head>
 <body>
+    <a href="#"><i class="fas fa-chevron-up fa-2x animate__animated animate__bounce wow arrow" 
+        data-wow-iteration="infinite" data-wow-duration="1.5s"></i></a>
     <header>
         <div class="container-fluid px-0">
             <nav class="navbar navbar-expand justify-content-center bg-dark">
                 <div class="" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -32,17 +31,14 @@
                     </li>
                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
                   </ul>
                 </div>
-                <a href="#"><i class="fas fa-chevron-up fa-2x animate__animated animate__bounce wow" data-wow-iteration="infinite" data-wow-duration="1.5s"></i></a>
+               
               </nav>
         </div>
         <!-- Navbar-ends -->
@@ -129,7 +125,7 @@
     <!-- Header ends here -->
 
     <main>
-        
+        <!-- about starts -->
         <section class="container-fluid about-me bg-dark" id="about">
             <div class="row">
             <div class="col-4">
@@ -173,13 +169,16 @@
         <!-- Skills start -->
         <section class="container-fluid skill text-center "  id="skill">
             
-            <h3 class="my-skill">My Skills</h3>
+            <h3 class="my-skill">
+                <span class="coding">&lt;skills&gt;</span>
+                What I know 
+                <span class="coding">&lt;/skills&gt;</span>
+            </h3>
             
             
             <p class="pt-4 lorem">
                 <span class="coding">&lt;/p&gt;</span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Error ab eaque deleniti quis. Necessitatibus, a.
+                 Lorem ipsum dolor sit amet consectetur, adipisicing 
                  <span class="coding">&lt;/p&gt;</span>
             </p>
             
@@ -211,7 +210,93 @@
 
         <!-- Skill ends -->
         
-        
+
+        <!-- service starts -->
+        <section class="container-fluid services text-center" id="services">
+            
+            <div class="services-header">
+                <h3 class="services-text">
+                    <span class="coding">&lt;services&gt;</span>
+                    What I do
+                    <span class="coding">&lt;/services&gt;</span>
+                </h3>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-4 py-3">
+                    <div class="card-service card-1">
+                        <div class="card-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                                <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
+                                <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323l-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                            
+                            <h4 class="card-body-header">
+                                <span class="coding">&lt;h4&gt;</span>
+                                UI/UX Design
+                                <span class="coding">&lt;/h4&gt;</span>
+                            </h4>
+                            
+                            <p class="card-body-text">
+                                Create UI/UX designs with user-friendly layouts .
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 py-3">
+                    <div class="card-service card-2">
+                        <div class="card-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                                <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                            
+                            <h4 class="card-body-header">
+                                <span class="coding">&lt;h4&gt;</span>
+                                Web Design
+                                <span class="coding">&lt;/h4&gt;</span>
+                            </h4>
+                            
+                            <p class="card-body-text">
+                                Create simple and interactive web design with react
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 py-3">
+                    <div class="card-service card-3">
+                        <div class="card-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                            
+                            <h4 class="card-body-header">
+                                <span class="coding">&lt;h4&gt;</span>
+                                Photography
+                                <span class="coding">&lt;/h4&gt;</span>
+                            </h4>
+                            
+                            <p class="card-body-text">
+                                Indoor/outdoor photo shooting with reasonable price.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- services ends -->
        
          
         
@@ -223,7 +308,7 @@
 
     <footer class="contact-me" id="contact">
         <div class="container-fluid py-2 text-center places bg-dark">
-            <h1 >Contact</h1>
+            <h1 >Connect with Me</h1>
             
         </div>
         <div class="container-fluid text-center">
@@ -252,7 +337,7 @@
                 <div class="col-md-4 col-sm-12 py-5 " >
                     
                     <img src="img/home.png" alt="phone-icon" class="a">
-                    <p class="live-in">Lives in Myitkyina,<br> Kachin State, 
+                    <p class="live-in">Live in Myitkyina,<br> Kachin State, 
                         <span class="a">&ThickSpace;M</span>
                         <span class="a">y</span>
                         <span class="a">a</span>

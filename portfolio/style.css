@@ -17,6 +17,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 /* custom scoll bar */
 
 ::-webkit-scrollbar-button {
@@ -55,7 +57,7 @@ nav {
     position: relative;
 }
 
-nav i {
+.arrow {
     position: fixed;
     bottom: 5%;
     color: #08fdd8;
@@ -161,14 +163,22 @@ nav li a:hover::after {
 }
 
 .btn-cv {
-    background-color: #08fdd8;
+
     height: 35px;
     width: 100px;
     font-size: 0.7rem;
-    border: 0;
-    color: white;
+    border: 1px solid #08fdd8;
+    background-color: rgb(33, 36, 44);
+    color: #08fdd8;
     font-family: 'Anton', sans-serif;
     outline: 0;
+}
+
+.btn-cv:hover {
+    border: 0;
+    background-color: #08fdd8;
+    color: white;
+
 }
 
 .fa-color {
@@ -320,9 +330,11 @@ header img {
 
 /* Skills */
 .skill {
-    padding: 30vmin 10vmin;
+    padding: 20vmin 10vmin;
     background-color: rgb(35, 36, 38);
     border-bottom: 1px solid #08fdd8;
+    border-top: 1px solid #08fdd8;
+
 }
 
 .my-skill {
@@ -512,6 +524,107 @@ header img {
 
 /* Skills div ends */
 
+/* Services starts */
+.services {
+    padding: 30vmin 10vmin;
+    background-color: rgb(35, 36, 38);
+    color: #08fdd891;
+    border-bottom: 1px solid #08fdd8;
+    border-top: 1px solid #08fdd8;
+}
+
+.services-header {
+    padding-bottom: 20vmin;
+}
+
+.services-text {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    position: relative;
+    font-size: 8vmin;
+    text-align: center;
+
+}
+
+.services-text::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: 47%;
+    height: 1.5px;
+    background-color: #08fdd8;
+    width: 6%;
+}
+
+.services-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: 45%;
+    height: 1.5px;
+    background-color: #08fdd8;
+    width: 10%;
+}
+
+.card-service {
+    width: 100%;
+    background-color: rgba(28, 29, 31, 0.733);
+}
+
+.card-service:hover {
+    border: 1px solid #08fdd8;
+    animation: card 0.3s linear;
+    margin-top: -30px;
+}
+
+@keyframes card {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: -30px;
+    }
+}
+
+
+.card-service .card-top {
+
+    padding: 5vmin;
+    border-bottom: 1px solid rgba(2255, 255, 255, 0.3)
+}
+
+.card-body {
+    padding: 10vmin 1vmin;
+
+}
+
+.card-body-header {
+    color: white;
+    opacity: 0.8;
+    font-size: 4vmin;
+    font-family: 'Londrina Solid', cursive;
+    padding-bottom: 5vmin;
+}
+
+.card-body-text {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2vmin;
+    padding: 3vmin 10vmin;
+    padding-bottom: 10vmin;
+}
+
+
+
+
+
+
+
+
+
+/* Services ends */
+
 /* Footer starts */
 .contact-me {
     background: rgb(29, 32, 40);
@@ -647,22 +760,28 @@ footer a:hover {
 
     } */
 
+    .services-text::before {
+        right: 40%;
+        width: 20%;
+    }
 
+    .services-text::after {
+        right: 36%;
+        width: 28%;
+    }
 
+    .about-text {
+        font-size: 10vmin
+    }
+
+    .myself span {
+        font-size: 5vmin;
+    }
 
 }
 
 /*  mobile phone */
 @media only screen and (max-width:425px) {
-    .yellow-line::after {
-
-        top: -45%;
-        right: -85%;
-
-        width: 7.5vmin;
-        height: 5px;
-
-    }
 
     .name-2 span {
         font-size: 5vmin;
@@ -696,13 +815,28 @@ footer a:hover {
     }
 
     .about-me {
-        padding-top: 45vmin;
+        padding-top: 40vmin;
         padding-bottom: 45vmin;
     }
 
     .about-me .col-4 {
         padding-top: 45vmin;
     }
+
+    .card-body-header {
+        font-size: 5vmin;
+    }
+
+    .card-body-text {
+        font-size: 3vmin;
+        padding-bottom: 30vmin;
+    }
+
+    .card-service:hover {
+        animation: none;
+        margin-top: 0;
+    }
+
 
 
 
@@ -718,9 +852,9 @@ footer a:hover {
         padding: 25vmin 15vmin;
     }
 
-    .about-text span {
+    .about-text {
         font-size: 20vmin;
-        padding-top: 2vmine;
+        padding-top: 2vmin;
     }
 
 }
@@ -739,7 +873,13 @@ footer a:hover {
         width: 30vmin;
     }
 
+    .about-text {
+        font-size: 10vmin;
+    }
 
+    .myself span {
+        font-size: 5vmin;
+    }
 }
 
 
