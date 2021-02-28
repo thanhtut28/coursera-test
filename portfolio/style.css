@@ -53,6 +53,7 @@ body {
     --bg-secondary: rgb(35, 36, 38);
     --text-primary: white;
     --text-secondary: #08fdd8;
+    --text-coding: rgba(255, 255, 255, 0.4)
 }
 
 body {
@@ -227,7 +228,7 @@ nav li a:hover::after {
     font-family: 'IBM Plex Sans', sans-serif !important;
     font-size: 2vmin !important;
     padding: 0 1vmin;
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: var(--text-coding) !important;
 }
 
 .job-2 {
@@ -1015,5 +1016,10 @@ footer a:hover {
     --bg-primary-2: rgb(29, 29, 31);
     --bg-secondary: white;
     --text-primary: rgba(34, 34, 33, 0.952);
-    --text-secondary: rgb(72, 128, 176)
+    --text-secondary: rgb(72, 128, 176);
+    --text-coding: rgba(0, 0, 0, 0, 4)
+}
+
+.white {
+    color: rgba(2255, 255, 255, 0.4) !important;
 }

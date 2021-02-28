@@ -491,7 +491,6 @@ $(document).ready(function () {
 
     $('.checkbox').on('click', () => {
         $('body').toggleClass('night-mode');
-        $('.coding').toggle()
         alert('You clicked the Day-Night shift toggler')
     })
 
