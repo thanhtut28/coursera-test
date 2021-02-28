@@ -300,9 +300,9 @@ gsap.from('.my-skill', { autoAlpha: 0,
     x:'-100%',
     opacity:0,
     scrollTrigger: {
-        trigger: '.my-skill',
-        start: 'top bottom',
-        end:'+=300 center',
+        trigger: '.skill',
+        start: 'top center',
+        
       
         toggleActions:'play reverse play reverse'
     }
@@ -474,3 +474,26 @@ gsap.from('.places', { autoAlpha: 0,
         toggleActions:'play reverse play reverse'
     }
 });
+
+
+//night mode 
+
+$(document).ready(function () {
+    // $('.checkbox').on('click', () => {
+    //     if($('.checkbox').prop('checked') == true) {
+    //         $('body').css('backgroundColor',' red')
+    //     }
+    //     else {
+    //         $('body').css('backgroundColor','green')
+    //     }
+    // })
+  
+
+    $('.checkbox').on('click', () => {
+        $('body').toggleClass('night-mode');
+        $('.coding').toggle()
+        alert('You clicked the Day-Night shift toggler')
+    })
+
+    
+})
