@@ -798,7 +798,7 @@ footer a:hover {
 @media only screen and (max-width:425px) {
 
     .name-2 span {
-        font-size: 5vmin;
+        font-size: 4vmin;
     }
 
 
@@ -851,6 +851,9 @@ footer a:hover {
         margin-top: 0;
     }
 
+    .a {
+        margin-left: -4px !important;
+    }
 
 
 
@@ -870,6 +873,7 @@ footer a:hover {
         font-size: 20vmin;
         padding-top: 2vmin;
     }
+
 
 }
 
