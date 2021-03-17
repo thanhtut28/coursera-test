@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * 0.7);
+}
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+    background-color: rgb(50, 60, 92);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: 0;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: 0;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8) {
+    border-bottom: 0;
+}
+
+.cell.x,
+.cell.circle {
+    cursor: not-allowed;
+}
+
+.cell.x::before,
+.cell.x::after {
+    background-color: rgb(245, 155, 66);
+}
+
+.cell.circle::before {
+    background-color: rgb(66, 111, 245)
+}
+
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+    background-color: lightgrey;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after {
+    content: '';
+    width: calc(var(--mark-size) * 0.15);
+    height: var(--mark-size);
+
+    position: absolute;
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.circle):hover::before {
+    transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.circle):hover::after {
+    transform: rotate(-45deg);
+}
+
+.cell.circle::before,
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::before,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.cell.circle::before,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+    width: var(--mark-size);
+    height: var(--mark-size);
+}
+
+.cell.circle::after,
+.board.circle .cell:not(.x):not(.circle):hover::after {
+    width: calc(var(--mark-size) * 0.7);
+    height: calc(var(--mark-size) * 0.7);
+    background-color: rgb(50, 60, 92)
+}
+
+/* board ends here */
+
+/* winning message */
+
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.7rem 1.2em;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 5vmin;
+}
+
+.winning-message button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.winning-message.show {
+    display: flex;
+}
+
+.choice {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(50, 60, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice.hide {
+    display: none;
+}
+
+.choice button {
+    outline: 0;
+    width: 40vmin;
+    height: 25vmin;
+    margin: 5rem;
+    font-size: 18vmin;
+    box-shadow: 0.3rem 0.5rem rgba(0, 0, 0, 0.3)
+}
+
+#xButton {
+    background-color: rgb(245, 155, 66);
+    color: white;
+    border: 0px solid white;
+}
+
+#oButton {
+    background-color: rgb(66, 111, 245);
+    color: white;
+    border: 0px solid white;
+}
