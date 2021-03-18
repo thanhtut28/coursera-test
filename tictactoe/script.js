@@ -26,10 +26,9 @@ let circleTurn;
 
 xbutton.addEventListener('click', choicex);
 obutton.addEventListener('click', choiceo);
-
+//choice listener
 function choicex() {
     circleTurn = false;
-    console.log('clicked');
 
     choiceElement.classList.add('hide');
     startGame();
@@ -37,17 +36,12 @@ function choicex() {
 
 function choiceo() {
     circleTurn = true;
-    console.log('clicked');
 
     choiceElement.classList.add('hide');
     startGame();
 }
 
-// function choiceo() {
-//     startGame();
-// }
-
-restartButton.addEventListener('click', newGame);
+restartButton.addEventListener('click', newGame); //restart listener
 
 function newGame() {
     choiceElement.classList.remove('hide');
@@ -58,7 +52,7 @@ function startGame() {
     cellElements.forEach(cell => {
         cell.classList.remove(X_CLASS);
         cell.classList.remove(CIRCLE_CLASS);
-        cell.addEventListener('click', handleClick, { once: true });
+        cell.addEventListener('click', handleClick);
     });
     setBoardHoverClass();
 }
@@ -80,7 +74,20 @@ function handleClick(e) {
         swapTurn(); // switch turns
         setBoardHoverClass();
     }
+
+    undoCell = cell;
+    undoClass = currentClass;
 }
+
+let undoCell;
+let undoClass;
+
+//undo listener   <--
+board.addEventListener('dblclick', () => {
+    undoCell.classList.remove(undoClass);
+    swapTurn();
+    setBoardHoverClass();
+});
 
 function endGame(draw) {
     if (draw) {

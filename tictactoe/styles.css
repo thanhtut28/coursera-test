@@ -10,7 +10,6 @@
 body {
     margin: 0;
     overflow: hidden;
-
 }
 
 :root {
@@ -72,7 +71,7 @@ body {
 }
 
 .cell.circle::before {
-    background-color: rgb(66, 111, 245)
+    background-color: rgb(66, 111, 245);
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before,
@@ -121,7 +120,7 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * 0.7);
     height: calc(var(--mark-size) * 0.7);
-    background-color: rgb(50, 60, 92)
+    background-color: rgb(50, 60, 92);
 }
 
 /* board ends here */
@@ -185,7 +184,7 @@ body {
     height: 25vmin;
     margin: 5vmin;
     font-size: 18vmin;
-    box-shadow: 0.3rem 0.5rem rgba(0, 0, 0, 0.3)
+    box-shadow: 0.5rem 0.5rem 20px 5px rgb(0 0 0 / 30%);
 }
 
 #xButton {
@@ -198,4 +197,12 @@ body {
     background-color: rgb(66, 111, 245);
     color: white;
     border: 0px solid white;
+}
+
+.undo {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    font-size: 3vmin;
 }
