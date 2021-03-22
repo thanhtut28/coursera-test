@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="srcipt.js" defer></script>
+    </head>
+
+    <body>
+        <div class="board">
+            <div class="human-choice">
+                <div class="cell-human" id="humanCell"></div>
+                <div class="button-group" id="buttonGroup">
+                    <button id="rock">rock</button>
+                    <button id="paper">paper</button>
+                    <button id="scissors">scissors</button>
+                </div>
+            </div>
+            <button id="fightButton">Fight</button>
+            <div class="computer-choice">
+                <div class="cell-computer" id="computerCell">
+                    <button class="generate" id="generate">generate</button>
+                </div>
+            </div>
+        </div>
+        <div class="winner-text" id="winnerText"></div>
+        <div class="endgame" id="endGame">
+            <div class="winner-message" id="winnerMessage"></div>
+            <button class="restart" id="restart">Restart</button>
+        </div>
+    </body>
+</html>

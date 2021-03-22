@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 40vmin;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(29, 32, 40);
+    background: linear-gradient(
+        180deg,
+        rgba(29, 32, 40, 1) 2%,
+        rgba(126, 29, 129, 1) 100%
+    );
+}
+
+.board {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.human-choice,
+.computer-choice {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.human-choice > .cell-human.rock,
+.computer-choice > .cell-computer.rock {
+    background-image: url(./rock.png);
+    background-size: cover;
+
+    /* width: calc(var(--cell-size) * 0.89); */
+    width: calc(var(--cell-size) * 0.9);
+    height: calc(var(--cell-size) * 0.9);
+}
+
+.human-choice > .cell-human.paper,
+.computer-choice > .cell-computer.paper {
+    background-image: url(./paper.png);
+    background-size: cover;
+    background-position: center;
+    /* width: calc(var(--cell-size) * 0.89); */
+    width: calc(var(--cell-size) * 0.9);
+    height: calc(var(--cell-size) * 0.9);
+}
+
+.human-choice > .cell-human.scissors,
+.computer-choice > .cell-computer.scissors {
+    background-image: url(./scizzors.png);
+    background-size: cover;
+    background-position: center;
+    /* width: calc(var(--cell-size) * 0.89); */
+    width: calc(var(--cell-size) * 0.9);
+    height: calc(var(--cell-size) * 0.9);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-group > button {
+    width: 12vmin;
+    height: 4vmin;
+    margin-top: 2rem;
+    font-size: 2vmin;
+}
+
+.button-group.hide {
+    display: none;
+}
+
+#fightButton {
+    width: 15vmin;
+    height: 9vmin;
+}
+
+.generate.hide {
+    display: none;
+}
+
+.winner-text {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+}
+
+.endgame {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 8vmin;
+    flex-direction: column;
+    text-align: center;
+}
+
+.endgame.show {
+    display: flex;
+}
+
+.restart {
+    width: 14rem;
+    height: 5rem;
+    background-color: blue;
+    border: 1px solid white;
+    color: white;
+    margin-top: 2rem;
+}
