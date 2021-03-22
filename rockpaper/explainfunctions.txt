@@ -1,0 +1,48 @@
+functions => addRockClass, addPaperClass , addScissorsClass ==> button hide and add R P S class to humanCell
+             
+             generateComputerChoice ==> random computer choice generator
+             computerChoiceFunction ==> add ComputerChoice = 'r' , 'p', 's'
+
+3 human buttons => addRockClass,... ()
+generate button => generateComputerChoice{computerChoiceFunction()} ()
+
+// calculate winner 
+
+functions ==> checkForWinners => plus humanChoice and ComputerChoice and take result with swith case
+                                 (and remove-classes function in cells) and winningCounts-function(calculate counts)
+              
+              removeClasses ==>  remove classes in human and computer cells()
+
+fight button => checkForWinners{removeClasses}
+
+// for winning counts
+
+functions ==> winningCounts ==> if( > 3) declare winner with winnerHuman and winnerComputer functions and 
+                                show winning-counts
+              
+              winnerHuman   ==> if > 3 end-game message show and show 'Humans wins' text and 
+                                humanCounts and computerCounts = 0
+             
+              winnerComputer==> ..                                    'Computer wins'
+
+
+// restart new game 
+
+function ==> restartNewGame ==> hide endGame message box
+
+restartButton ==> restartNewGame-function()
+
+
+
+steps by steps 
+
+click one of 3 buttons => addRockClass or addPaperClass or addScissorsClass to humanCell and add humanChoice
+
+click generate button  => random generate class to computer cell and add 'r' 'p' 's' to computerChoice
+
+click fight button => checkForWinners{removeClasses in human and computer cell} and winningCounts-function
+                      winningCounts => if >3 winnerHuman or winnerComputer and shows winnerText(Human:0 vs com:0)
+                      winnerHuman or winnerCom => set all counts to zero(humanCount = 0) and show endGame message box
+                      (add .show-class) and restart button
+
+click restart button => hide endGame message box(remove .show-class)

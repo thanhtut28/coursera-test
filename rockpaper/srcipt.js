@@ -103,7 +103,7 @@ function checkForWinners() {
         default:
             console.log('pick all choices');
     }
-    winningCounts();
+    showWinningCounts();
 }
 
 function removeClasses() {
@@ -117,30 +117,22 @@ function removeClasses() {
 
 winnerText.innerHTML = `Human : ${humanWinCount} Vs Computer : ${computerWinCount}`;
 
-function winningCounts() {
-    if (humanWinCount >= 3) {
-        humanWinCount = 0;
-        computerWinCount = 0;
-        winnerHuman();
-    } else if (computerWinCount >= 3) {
-        humanWinCount = 0;
-        computerWinCount = 0;
-        winnerComputer();
+function showWinningCounts() {
+    if (humanWinCount >= 3 || computerWinCount >= 3) {
+        winner();
     }
     winnerText.innerHTML = `Human : ${humanWinCount} Vs Computer : ${computerWinCount}`;
 }
-
-restart.addEventListener('click', restartNewGame);
-
-function winnerHuman() {
+// declare winner with endgame message box
+function winner() {
     endGame.classList.add('show');
-    winnerMessage.innerHTML = `Human Wins the game`;
+    winnerMessage.innerHTML =
+        humanWinCount >= 3 ? `Humans Wins the game` : `Computer Wins the game`;
+    humanWinCount = 0;
+    computerWinCount = 0;
 }
 
-function winnerComputer() {
-    endGame.classList.add('show');
-    winnerMessage.innerHTML = `Computer Wins the game`;
-}
+restart.addEventListener('click', restartNewGame); //remove endgame messagebox
 
 function restartNewGame() {
     endGame.classList.remove('show');

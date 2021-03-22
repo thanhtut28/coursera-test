@@ -106,7 +106,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     justify-content: center;
     align-items: center;
@@ -127,4 +127,8 @@ body {
     border: 1px solid white;
     color: white;
     margin-top: 2rem;
+}
+
+button {
+    cursor: pointer;
 }
